@@ -9,6 +9,6 @@ dateTime <- strptime(paste(reqData$Date, reqData$Time), "%Y-%m-%d %H:%M:%S")
 
 #plot and save in png file
 png("plot2.png", width = 480, height = 480)
-par(bg = "transparent")
+#par(bg = "transparent")
 plot(dateTime, reqData$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
 dev.off()

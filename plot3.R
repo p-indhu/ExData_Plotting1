@@ -9,7 +9,7 @@ dateTime <- strptime(paste(reqData$Date, reqData$Time), "%Y-%m-%d %H:%M:%S")
 
 #plot and save in png file
 png("plot3.png", width = 480, height = 480)
-par(bg = "transparent")
+#par(bg = "transparent")
 
 plot(dateTime, reqData$Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l")
 points(dateTime, reqData$Sub_metering_2, type = "l", col = "red")
