@@ -19,8 +19,8 @@ plot(dateTime, reqData$Voltage, xlab = "datetime", ylab = "Voltage", type = "l")
 plot(dateTime, reqData$Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l")
 points(dateTime, reqData$Sub_metering_2, type = "l", col = "red")
 points(dateTime, reqData$Sub_metering_3, type = "l", col = "blue")
-legend("topright", col = c("black", "red", "blue"), xjust = 0, yjust = 0, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1, box.lty = 0)
+legend("topright", col = c("black", "red", "blue"), xjust = 0, yjust = 0, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1, bty = "n")
 
-plot(dateTime, reqData$Global_reactive_power, xlab = "datetime", ylab = "Global_Reactive_Power", type = "l")
+plot(dateTime, reqData$Global_reactive_power, xlab = "datetime", ylab = "Global_reactive_power", type = "l")
 
 dev.off()
